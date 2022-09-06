@@ -1,0 +1,171 @@
+body{
+    padding: 0 1%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/*stilisation de la partie de navigation*/
+nav{
+    display: flex;
+    display: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+nav .profile{
+    display: flex;
+    align-items: center;
+    
+}
+/*reduction de la taille de l'image*/
+nav .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+nav .profile h1{
+    margin-left: 10px;
+    font-size: 15px;
+}
+/*la partie des ul du nav*/
+nav ul {
+   display: flex;
+   list-style-type: none;
+   
+}
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    font-weight: 700;
+}
+nav ul li:hover{
+   border-bottom-color: #111;
+}
+.content{
+    margin: 4%;
+}
+.content header{
+    max-width: 80%;
+}
+.content header h1{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+}
+.content header p{
+    line-height: 30px;
+    color: #A9A9A9	;
+}
+.content header button{
+    color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #111;
+
+}
+.content header button:hover{
+    color: #ccc;
+    border-bottom-color: #ccc;
+}
+.content .main-image {
+    margin-top: 30px;
+}
+.content .main-image img{
+    width: 100%;
+    height: auto;
+}
+/*la partie realisation de projet*/
+.content .section-projets {
+    margin-top: 6%;
+}
+.content .section-projets h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 3vw;
+
+}
+.content .section-projets .projets{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+   
+}
+.content .section-projets .projets .projet{
+    max-width: 195px;
+   
+}
+.content .section-projets .projets .projet h3{
+    align-items: inherit;
+    margin: 0;
+}
+.content .section-projets .projets .projet .description{
+    font-size: 10px;
+}
+.content .section-projets .projets .projet .date{
+    font-size: 13px;
+    color: rgba(145,145,145);
+}
+footer{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+
+}
+footer .colonne p{
+    font-size: 12px;
+    color: #A9A9A9;
+    cursor: pointer;
+}
+footer .colonne h3{
+    font-size: 1.5em;
+}
+footer .colonne p:hover{
+    color: #00FFFF;
+    transform:scale(1.5);
+
+}
+
+
+/*responsive affichage sur les écrans mobiles*/
+@media screen and (max-width:720px){
+    nav{
+        justify-content: center;
+    }
+    
+    nav ul{
+        display: none;
+    }
+    .content header{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .content .section-projets{
+        margin-top: 15px;
+    }
+    .content .section-projets h1{
+        font-size: 1.5em;
+    }
+    .content .section-projets .projets .projet{
+        max-width: 100%;
+       
+    }
+    footer{
+        justify-content: flex-start;
+    }
+    footer .colonne{
+        width: 80%;
+    }
+}
